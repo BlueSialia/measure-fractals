@@ -1,0 +1,51 @@
+#canvases {
+	position: relative;
+	margin: auto;
+	display: block;
+	height: 720px;
+	width: 1280px;
+	border: solid #808080 2px;
+}
+
+#canvases > canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 720px;
+	width: 1280px;
+}
+
+#buttons {
+	margin: 1em auto;
+	text-align: center;
+	display: block;
+}
+
+.pure-input {
+	position: relative;
+	width: 130px;
+	margin: auto;
+	cursor: pointer;
+	border: 0;
+	height: 34px;
+	border-radius: 2px;
+}
+
+.pure-input:hover:after {
+	background: #20a819;
+}
+
+.pure-input:after {
+	background: #24bf1c;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	content: "Upload Image";
+	line-height: 34px;
+	border-radius: 2px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Measure Fractals</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div id="buttons">
+	<input type="file" id="input" accept="image/jpeg, image/png" class="pure-button pure-input">
+	<button type="button" id="paint" class="pure-button">Paint</button>
+	<button type="button" id="execute" class="pure-button pure-button-primary">Execute</button>
+	<label for="sensitivity">Sensitivity:</label>
+	<input type="range" name="sensitivity" id="sensitivity" value="250" min="0" max="255">
+</div>
+
+<div id="canvases">
+	<canvas id="imageCanvas"></canvas>
+	<canvas id="gridCanvas"></canvas>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/listeners.js"></script>
+<script src="js/paint.js"></script>
+<script src="js/utils.js"></script>
+</body>
+</html>
